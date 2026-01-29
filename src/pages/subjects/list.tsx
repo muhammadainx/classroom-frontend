@@ -33,8 +33,8 @@ const SubjectsList = () => {
           },
         ];
 
-  const searchFiters = searchQuery
-    ? [{ field: 'name', operator: 'eq' as const, value: searchQuery }]
+  const searchFilters = searchQuery
+    ? [{ field: 'name', operator: 'contains' as const, value: searchQuery }]
     : [];
 
   const subjectTable = useTable<Subject>({
@@ -83,7 +83,7 @@ const SubjectsList = () => {
       resource: 'subjects',
       pagination: { pageSize: 10, mode: 'server' },
       filters: {
-        permanent: [...departmentFilters, ...searchFiters],
+        permanent: [...departmentFilters, ...searchFilters],
       },
       sorters: {
         initial: [{ field: 'id', order: 'desc' }],

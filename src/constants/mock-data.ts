@@ -21,12 +21,12 @@ export const MOCK_DATA: Subject[] = [
     createdAt: new Date().toISOString(),
   },
 
-  // Conputer Science
+  // Computer Science
   {
     id: 3,
     code: 'CS101',
     name: 'Introduction to Programming',
-    department: 'Conputer Science',
+    department: 'Computer Science',
     description:
       'Teaches basic programming concepts such as variables, control structures, and functions using a high-level language.',
     createdAt: new Date().toISOString(),
@@ -35,7 +35,7 @@ export const MOCK_DATA: Subject[] = [
     id: 4,
     code: 'CS210',
     name: 'Data Structures',
-    department: 'Conputer Science',
+    department: 'Computer Science',
     description:
       'Explores common data structures including arrays, linked lists, stacks, queues, trees, and hash tables.',
     createdAt: new Date().toISOString(),

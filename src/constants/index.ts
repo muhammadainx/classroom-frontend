@@ -1,6 +1,6 @@
 export const DEPARTMENTS = [
   'Business Administration',
-  'Conputer Science',
+  'Computer Science',
   'Information Technology',
   'Mathematics',
   'Software Engineering',
